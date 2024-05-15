@@ -81,3 +81,7 @@ How would this affect the current plan upgrade calculation?
 
 ### answer here:
 ---
+
+Introducing defaultUsers and pricePerUser to plans means that each plan now comes with a certain number of users included by default, and there's a price for each additional user beyond that default number. When calculating the upgrade price from one plan to another, we'll consider not only the difference in plan prices but also the number of users in the subscription.
+
+For example, if a user upgrades from a plan with 5 default users to another plan with 10 default users and a higher price per user, we'll calculate the upgrade cost by factoring in the difference in plan prices and any additional user costs incurred due to the change in the number of default users. This ensures that users are charged appropriately based on their plan and usage, providing clarity and fairness in pricing upgrades.
